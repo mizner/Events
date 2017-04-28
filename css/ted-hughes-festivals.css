@@ -1,0 +1,161 @@
+/*
+ * Festival Config Layout
+ */
+
+
+
+/*
+ * Session Grid Layout
+ */
+.session-grid {
+  margin-top: 1em;
+}
+
+.session-parent {
+  background: #23282d;
+  padding: 0.1em 0.9em;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.session-parent h3 {
+  color: white;
+}
+
+.session-group {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media screen and (min-width: 1024px) {
+  .session-group {
+    flex-flow: initial;
+  }
+}
+
+.session-group > .session-child {
+  flex: 1 100%;
+  max-width: 33.33%;
+  margin-bottom: 1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .session-group > .session-child {
+    flex: 1;
+    padding-right: 1em;
+  }
+  .session-group > .session-child:last-of-type {
+    padding-right: 0;
+  }
+}
+
+/*
+ * Single Session Component
+ */
+
+.session-child-inner {
+  padding: 1em;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .04);
+}
+
+.session-child-inner form input,
+.session-child-inner form textarea {
+  //margin-top: -3px;
+  width: 100%;
+  margin-bottom: 15px;
+  font-family: Consolas, Monaco, monospace;
+}
+
+.session-child-inner form textarea {
+  font-size: 13px;
+}
+
+.session-child-inner form [name="title"] {
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.session-child-inner form label,
+.session-child-inner form input,
+.session-child-inner form textarea {
+
+}
+
+.session-child-inner form label {
+  padding: 2.5px 7.5px;
+  background: #f1f1f1;
+  color: gray;
+  margin-top: 10px;
+  margin-left: 0px;
+  border-left: 1px solid #e2e2e2;
+  border-right: 1px solid #e2e2e2;
+  border-top: 1px solid #e2e2e2;
+  font-size: 12px;
+}
+
+.session-child-inner button {
+  transition: 400ms ease all;
+}
+
+.session-child-inner.saved-true button {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.session-child-inner.saved-false button {
+  visibility: visible;
+  opacity: 1;
+}
+
+.session-child-inner.saved-false {
+  background-color: #f7e8e8;
+}
+
+/* Button */
+
+.session-button-add {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  background-color: transparent;
+  border: 1px solid #e2e2e2;
+  font-weight: 600;
+  color: gray;
+  border-radius: 3px;
+}
+
+.session-button-add:hover {
+  background: #008ec2;
+  border-color: #0073aa #006799 #006799;
+  color: white;
+  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}
+
+.session-button-text {
+  padding-left: .5em;
+}
+
+.session-group-button {
+  min-width: 333px;
+  min-height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em 0;
+  background-color: transparent;
+  border: 1px solid #e2e2e2;
+  font-weight: 600;
+  color: gray;
+  border-radius: 3px;
+  margin-bottom: 1em;
+}
+
+.session-group-button:hover {
+  background: #008ec2;
+  border-color: #0073aa #006799 #006799;
+  color: white;
+  text-shadow: 0 -1px 1px #006799, 1px 0 1px #006799, 0 1px 1px #006799, -1px 0 1px #006799;
+}

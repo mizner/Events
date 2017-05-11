@@ -1,6 +1,6 @@
 <?php
 /**
- * Core Plugin for "The Ted Hughes Project"
+ * Core Plugin for "Events Plugin"
  *
  * @link              https://www.makedo.net
  * @author            Make Do <hello@makedo.net>
@@ -8,13 +8,13 @@
  * @version           1.0
  *
  * @WordPress-plugin
- * Plugin Name:       Ted Hughes Core
- * Plugin URI:        https://github.com/mkdo/tedhughes/
- * Description:       Core Plugin for "The Ted Hughes Project"
+ * Plugin Name:       Events
+ * Plugin URI:        https://github.com/Mizner/Events
+ * Description:       Core Plugin for "Events Plugin"
  * Version:           1.0
- * Author:            Make Do <hello@makedo.net>
- * Author URI:        http://www.makedo.in
- * Text Domain:       ted-hughes
+ * Author:            Michael Mizner
+ * Author URI:        http://www.mizner.io
+ * Text Domain:       events-plugin
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  */
@@ -34,8 +34,8 @@ function _log( $message ) {
 
 
 // Constants.
-define( 'TED_HUGHES_CORE_PATH', plugin_dir_path( __FILE__ ) );
-define( 'TED_HUGHES_CORE_URI', plugin_dir_url( __FILE__ ) );
+define( 'EVENTS_CORE_PATH', plugin_dir_path( __FILE__ ) );
+define( 'EVENTS_CORE_URI', plugin_dir_url( __FILE__ ) );
 
 // Load Classes.
 require_once 'php/class-meta-carousel.php';
@@ -122,7 +122,3 @@ $controller             = new Controller_Main(
 
 // Run the Plugin.
 $controller->run();
-
-/**
- * @todo: consider removing wpautop from Session CPT
- */

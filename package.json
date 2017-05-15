@@ -1,5 +1,5 @@
 {
-  "name": "ted-hughes-fesitvals",
+  "name": "events-plugin",
   "version": "1.0.0",
   "description": "Interface for creating sessions",
   "main": "index.php",
